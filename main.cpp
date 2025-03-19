@@ -236,28 +236,27 @@ public:
         }
     }
 
-// see NFA processing
-    // bool process(const std::string& word) const {
-    //     const State *currentState = nullptr;
-    //     for (const auto & state : states) {
-    //         if (state->initial) {
-    //             currentState = state;
-    //             break;
-    //         }
-    //     }
-    //
-    //     if (word.empty()) {
-    //         return currentState != nullptr && currentState->final;
-    //     }
-    //
-    //     for (char symbol : word) {
-    //         if (currentState == nullptr || !currentState->transitions.contains(symbol)) {
-    //             return false;
-    //         }
-    //         currentState = currentState->transitions.at(symbol);
-    //     }
-    //     return currentState != nullptr && currentState->final;
-    // }
+    bool process(const std::string& word) const{
+        const State* currentState = nullptr;
+        for (const auto & state : states) {
+            if (state->initial) {
+                currentState = state;
+                break;
+            }
+        }
+
+        if (word.empty()) {
+            return currentState != nullptr && currentState->final;
+        }
+
+        for (char symbol : word) {
+            if (currentState == nullptr || !currentState->transitions.contains(symbol)) {
+                return false;
+            }
+            currentState = currentState->transitions.at(symbol);
+        }
+        return currentState != nullptr && currentState->final;
+    }
 };
 
 template <typename FA>
@@ -319,7 +318,7 @@ int main() {
     _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
     Test<DFA> t1("words.in");
     t1.run();
-    Test<NFA> t2("words.in");
-    t2.run();
+    // Test<NFA> t2("words.in");
+    // t2.run();
     return 0;
 }
