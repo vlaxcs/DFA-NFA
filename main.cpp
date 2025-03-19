@@ -137,6 +137,8 @@ protected:
 
             this->stateMap[newState->name] = newState;
             this->states.push_back(newState);
+            newState = nullptr;
+            delete newState;
         }
 
         // The DFA must have at least one final state
@@ -211,7 +213,7 @@ public:
             return currentState != nullptr && currentState->final;
         }
 
-        for (char symbol : word) {
+        for (auto symbol : word) {
             if (currentState == nullptr || !currentState->transitions.contains(symbol)) {
                 return false;
             }
@@ -234,6 +236,7 @@ public:
         }
     }
 
+// see NFA processing
     // bool process(const std::string& word) const {
     //     const State *currentState = nullptr;
     //     for (const auto & state : states) {
@@ -294,7 +297,9 @@ public:
     explicit Test(const std::string& filename) {
         setWords(filename);
         setConfigPath();
+    }
 
+    void run(){
         for (const auto& entry : std::filesystem::directory_iterator(this->configPath)) {
             if (entry.is_regular_file()) {
                 std::string currentConfig = this->configPath + entry.path().filename().string();
@@ -306,17 +311,15 @@ public:
             }
         }
     }
+
+    ~Test(){std::cout<<"Test finished";};
 };
 
 int main() {
     _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
-    int *a = new int;
-    std::cout << a << " ";
-    delete a;
-    Test<DFA>("words.in");
-    int *b = new int;
-    std::cout << b << " ";
-    delete b;
-    //Test<NFA>("words.in");
+    Test<DFA> t1("words.in");
+    t1.run();
+    Test<NFA> t2("words.in");
+    t2.run();
     return 0;
 }
