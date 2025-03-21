@@ -77,7 +77,7 @@ void FiniteAutomaton::setStates(const std::vector<std::string>& stateLines) {
          }
 
          if (this->stateMap.contains(fromState) && this->stateMap.contains(toState)) {
-             this->stateMap[fromState]->transitions[symbol] = stateMap[toState];
+             this->stateMap[fromState]->transitions.insert({symbol, this->stateMap[toState]});
          } else {
              UserWarn("There are undefined states", line);
          }
@@ -87,8 +87,8 @@ void FiniteAutomaton::setStates(const std::vector<std::string>& stateLines) {
 void FiniteAutomaton::setStartState() {
     for (const auto & state : states) {
         if (state->initial) {
-        startState = state;
-        break;
+            startState = state;
+            break;
         }
     }
 }

@@ -46,7 +46,7 @@ public:
         setConfigPath();
     }
 
-    void run(){
+    void run() {
         std::string currentPath = getConfigPath();
         for (const auto& entry : std::filesystem::directory_iterator(currentPath)) {
             if (entry.is_regular_file()) {
@@ -54,7 +54,7 @@ public:
                 std::cout << std::endl << "Configuration: " << currentConfig << std::endl;
                 FA custom(currentConfig);
                 for (const auto& word : words) {
-                    std::cout << "Word: " << word << ": ";
+                    std::cout << "Word: " << word << " >> ";
                     getResult(custom, word) ? std::cout << "Accepted!" << std::endl : std::cout << "Rejected!" << std::endl;
                 }
             }
