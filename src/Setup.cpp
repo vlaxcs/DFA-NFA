@@ -27,7 +27,7 @@ Setup::Setup(const std::string& file) {
             readSigma = readStates = false;
         } else if (line.find("End") != std::string::npos) {
             readSigma = readStates = readTransitions = false;
-        } else if (line.starts_with("#")) {
+        } else if (line.starts_with("#") || line.empty()) {
             continue;
         } else {
             if (readSigma) {

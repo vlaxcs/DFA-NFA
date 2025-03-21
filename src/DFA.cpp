@@ -24,10 +24,11 @@ bool DFA::process(const std::string& word) const {
     }
 
     for (const auto &symbol : word) {
-        if (!currentState->transitions.contains(symbol)) {
+        auto transitionsWithSymbol = currentState->transitions.equal_range(symbol);
+        if (transitionsWithSymbol.first == transitionsWithSymbol.second) {
             return false;
         }
-        currentState = currentState->transitions.at(symbol);
+        currentState = transitionsWithSymbol.first->second;
     }
 
     return currentState->final;
