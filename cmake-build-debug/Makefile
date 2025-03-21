@@ -128,29 +128,149 @@ DFA_NFA/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DFA_NFA.dir\build.make CMakeFiles/DFA_NFA.dir/build
 .PHONY : DFA_NFA/fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+src/DFA.obj: src/DFA.cpp.obj
+.PHONY : src/DFA.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DFA_NFA.dir\build.make CMakeFiles/DFA_NFA.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+src/DFA.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DFA_NFA.dir\build.make CMakeFiles/DFA_NFA.dir/src/DFA.cpp.obj
+.PHONY : src/DFA.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/DFA.i: src/DFA.cpp.i
+.PHONY : src/DFA.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DFA_NFA.dir\build.make CMakeFiles/DFA_NFA.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/DFA.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DFA_NFA.dir\build.make CMakeFiles/DFA_NFA.dir/src/DFA.cpp.i
+.PHONY : src/DFA.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/DFA.s: src/DFA.cpp.s
+.PHONY : src/DFA.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DFA_NFA.dir\build.make CMakeFiles/DFA_NFA.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/DFA.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DFA_NFA.dir\build.make CMakeFiles/DFA_NFA.dir/src/DFA.cpp.s
+.PHONY : src/DFA.cpp.s
+
+src/FiniteAutomaton.obj: src/FiniteAutomaton.cpp.obj
+.PHONY : src/FiniteAutomaton.obj
+
+# target to build an object file
+src/FiniteAutomaton.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DFA_NFA.dir\build.make CMakeFiles/DFA_NFA.dir/src/FiniteAutomaton.cpp.obj
+.PHONY : src/FiniteAutomaton.cpp.obj
+
+src/FiniteAutomaton.i: src/FiniteAutomaton.cpp.i
+.PHONY : src/FiniteAutomaton.i
+
+# target to preprocess a source file
+src/FiniteAutomaton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DFA_NFA.dir\build.make CMakeFiles/DFA_NFA.dir/src/FiniteAutomaton.cpp.i
+.PHONY : src/FiniteAutomaton.cpp.i
+
+src/FiniteAutomaton.s: src/FiniteAutomaton.cpp.s
+.PHONY : src/FiniteAutomaton.s
+
+# target to generate assembly for a file
+src/FiniteAutomaton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DFA_NFA.dir\build.make CMakeFiles/DFA_NFA.dir/src/FiniteAutomaton.cpp.s
+.PHONY : src/FiniteAutomaton.cpp.s
+
+src/NFA.obj: src/NFA.cpp.obj
+.PHONY : src/NFA.obj
+
+# target to build an object file
+src/NFA.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DFA_NFA.dir\build.make CMakeFiles/DFA_NFA.dir/src/NFA.cpp.obj
+.PHONY : src/NFA.cpp.obj
+
+src/NFA.i: src/NFA.cpp.i
+.PHONY : src/NFA.i
+
+# target to preprocess a source file
+src/NFA.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DFA_NFA.dir\build.make CMakeFiles/DFA_NFA.dir/src/NFA.cpp.i
+.PHONY : src/NFA.cpp.i
+
+src/NFA.s: src/NFA.cpp.s
+.PHONY : src/NFA.s
+
+# target to generate assembly for a file
+src/NFA.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DFA_NFA.dir\build.make CMakeFiles/DFA_NFA.dir/src/NFA.cpp.s
+.PHONY : src/NFA.cpp.s
+
+src/Setup.obj: src/Setup.cpp.obj
+.PHONY : src/Setup.obj
+
+# target to build an object file
+src/Setup.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DFA_NFA.dir\build.make CMakeFiles/DFA_NFA.dir/src/Setup.cpp.obj
+.PHONY : src/Setup.cpp.obj
+
+src/Setup.i: src/Setup.cpp.i
+.PHONY : src/Setup.i
+
+# target to preprocess a source file
+src/Setup.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DFA_NFA.dir\build.make CMakeFiles/DFA_NFA.dir/src/Setup.cpp.i
+.PHONY : src/Setup.cpp.i
+
+src/Setup.s: src/Setup.cpp.s
+.PHONY : src/Setup.s
+
+# target to generate assembly for a file
+src/Setup.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DFA_NFA.dir\build.make CMakeFiles/DFA_NFA.dir/src/Setup.cpp.s
+.PHONY : src/Setup.cpp.s
+
+src/UserWarn.obj: src/UserWarn.cpp.obj
+.PHONY : src/UserWarn.obj
+
+# target to build an object file
+src/UserWarn.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DFA_NFA.dir\build.make CMakeFiles/DFA_NFA.dir/src/UserWarn.cpp.obj
+.PHONY : src/UserWarn.cpp.obj
+
+src/UserWarn.i: src/UserWarn.cpp.i
+.PHONY : src/UserWarn.i
+
+# target to preprocess a source file
+src/UserWarn.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DFA_NFA.dir\build.make CMakeFiles/DFA_NFA.dir/src/UserWarn.cpp.i
+.PHONY : src/UserWarn.cpp.i
+
+src/UserWarn.s: src/UserWarn.cpp.s
+.PHONY : src/UserWarn.s
+
+# target to generate assembly for a file
+src/UserWarn.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DFA_NFA.dir\build.make CMakeFiles/DFA_NFA.dir/src/UserWarn.cpp.s
+.PHONY : src/UserWarn.cpp.s
+
+src/main.obj: src/main.cpp.obj
+.PHONY : src/main.obj
+
+# target to build an object file
+src/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DFA_NFA.dir\build.make CMakeFiles/DFA_NFA.dir/src/main.cpp.obj
+.PHONY : src/main.cpp.obj
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DFA_NFA.dir\build.make CMakeFiles/DFA_NFA.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DFA_NFA.dir\build.make CMakeFiles/DFA_NFA.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -161,9 +281,24 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DFA_NFA
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... src/DFA.obj
+	@echo ... src/DFA.i
+	@echo ... src/DFA.s
+	@echo ... src/FiniteAutomaton.obj
+	@echo ... src/FiniteAutomaton.i
+	@echo ... src/FiniteAutomaton.s
+	@echo ... src/NFA.obj
+	@echo ... src/NFA.i
+	@echo ... src/NFA.s
+	@echo ... src/Setup.obj
+	@echo ... src/Setup.i
+	@echo ... src/Setup.s
+	@echo ... src/UserWarn.obj
+	@echo ... src/UserWarn.i
+	@echo ... src/UserWarn.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
 .PHONY : help
 
 
