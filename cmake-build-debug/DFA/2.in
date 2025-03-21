@@ -22,7 +22,7 @@ q0 , c , q3
 q1 , b , q2
 q2 , a , q3
 q1 , c , q4
-q2 , B , q4
+q2 , b , q4
 q3 , a , q4
 q4 , a , q5
 q5 , a , q4

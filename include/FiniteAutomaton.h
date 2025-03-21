@@ -14,6 +14,8 @@ protected:
     std::unordered_map<std::string, std::shared_ptr<State>> stateMap;
     std::shared_ptr<State> startState = nullptr;
 
+    bool inSigma(const char& symbol);
+
     void setSigma(std::vector<std::string> const& sigma_);
     void setStates(const std::vector<std::string>& stateLines);
     void setTransitions(std::vector<std::string> const& transitions);

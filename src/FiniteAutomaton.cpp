@@ -4,6 +4,10 @@
 #include <State.h>
 #include <UserWarn.h>
 
+bool FiniteAutomaton::inSigma(const char& symbol){
+    return !(this->sigma.find(symbol) == this->sigma.end());
+}
+
 void FiniteAutomaton::setSigma(std::vector<std::string> const& sigma_) {
      for (const auto& line : sigma_) {
          this->sigma.insert(line[0]);
@@ -66,6 +70,10 @@ void FiniteAutomaton::setStates(const std::vector<std::string>& stateLines) {
                  case 2: toState = token; break;
                  default: break;
              }
+         }
+
+         if (!inSigma(symbol)){
+             UserWarn("The symbol is not defined in Sigma");
          }
 
          if (this->stateMap.contains(fromState) && this->stateMap.contains(toState)) {
