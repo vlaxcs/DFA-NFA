@@ -1,31 +1,37 @@
 #include <algorithm>
 #include <iostream>
 #include <fstream>
-#include <cstring>
 #include <vector>
 #include <unordered_map>
 #include <string>
-#include <crtdbg.h>
 #include <filesystem>
+#include <cassert>
+#include <unordered_set>
 
 struct State {
     std::string name;
     bool initial = false;
     bool final = false;
-    std::unordered_map<char, State*> transitions;
+    std::unordered_map<char, std::shared_ptr<State>> transitions;
 };
 
 class UserWarn {
-public:
-    explicit UserWarn(const std::string& reason) {
-        std::cerr << "Configuration error: " << reason << '\n';
+private:
+    static void configurationError(const std::string& reason, const std::string& line = "") {
+        if (!line.empty()) {
+            std::cout << "Issue at: " << line << std::endl;
+        }
+        std::cerr << "Configuration error: " << reason << std::endl;
         exit(1);
     }
 
+public:
+    explicit UserWarn(const std::string& reason) {
+       configurationError(reason);
+    }
+
     explicit UserWarn(const std::string& reason, const std::string& line) {
-        std::cout << "Issue at: " << line << '\n';
-        std::cerr << "Configuration error: " << reason << '\n';
-        exit(1);
+        configurationError(reason, line);
     }
 };
 
@@ -89,59 +95,58 @@ public:
 
 class FiniteAutomaton {
 protected:
-    std::vector<char> sigma;
-    std::vector<State*> states;
-    std::unordered_map<std::string, State*> stateMap;
+    std::unordered_set<char> sigma;
+    std::vector<std::shared_ptr<State>> states;
+    std::unordered_map<std::string, std::shared_ptr<State>> stateMap;
+    std::shared_ptr<State> startState = nullptr;
 
-    // Checks if Sigma contains given symbol
-    bool inSigma(const char symbol) const {
-        for (const auto & chr : this->sigma) {
-            if (chr == symbol) {
-                return true;
-            }
-        }
-        return false;
-    }
+    /*  Checks if Sigma contains given symbol
+        bool inSigma(const char symbol) const {
+        return sigma.contains(symbol);
+    }*/
 
     void setSigma(std::vector<std::string> const& sigma) {
         for (const auto& line : sigma) {
-            this->sigma.push_back(line[0]);
+            this->sigma.insert(line[0]);
         }
     }
 
-    void setStates(std::vector<std::string> const& states) {
+    void setStates(const std::vector<std::string>& stateLines) {
         bool hasInitialState = false, hasFinalState = false;
-        for (const auto& line : states) {
-            auto* newState = new State(); // baga unique pointer
+        for (const auto& line : stateLines) {
+            auto newState = std::make_shared<State>();
 
-            char str[line.size() + 1];
-            std::strcpy(str, line.c_str());
-            const char* token = strtok(str, ", ");
-            while (token != nullptr) {
-                std::string tokenStr = token;
-                if (tokenStr == "S") {
-                    // The DFA should have a unique initial state
+            std::istringstream iss(line);
+            std::string token;
+
+            while (std::getline(iss, token, ',')) {
+                token.erase(0, token.find_first_not_of(' '));
+                token.erase(token.find_last_not_of(' ') + 1);
+
+                if (token == "S") {
                     if (hasInitialState) {
                         UserWarn("Initial state should be unique", line);
                     }
                     hasInitialState = true;
                     newState->initial = true;
-                } else if (tokenStr == "F") {
+                } else if (token == "F") {
                     newState->final = true;
                     hasFinalState = true;
                 } else {
-                    newState->name = tokenStr;
+                    newState->name = token;
                 }
-                token = strtok(nullptr, ", ");
+            }
+
+            if (newState->name.empty()) {
+                UserWarn("State must have a name", line);
+                continue;
             }
 
             this->stateMap[newState->name] = newState;
             this->states.push_back(newState);
-            newState = nullptr;
-            delete newState;
         }
 
-        // The DFA must have at least one final state
+        // Any Finite Automaton must have at least one final state
         if (!hasFinalState) {
             UserWarn("At least one final state required");
         }
@@ -149,43 +154,47 @@ protected:
 
     void setTransitions(std::vector<std::string> const& transitions) {
         for (const auto& line : transitions) {
-            char str[line.size() + 1];
-            std::strcpy(str, line.c_str());
-            const char* token = strtok(str, ", ");
-            std::string fromState, toState;
-            char symbol = '-';
+            std::istringstream iss(line);
+            std::string fromState, toState, token;
+            char symbol;
 
             int tokenCount = 0;
-            while (token != nullptr) {
+            while (std::getline(iss, token, ',')) {
+                token.erase(0, token.find_first_not_of(' '));
+                token.erase(token.find_last_not_of(' ') + 1);
                 switch (tokenCount++) {
                     case 0: fromState = token; break;
-                    case 1: if (strlen(token) > 1) UserWarn("The symbol should be an unique character", line); symbol = token[0]; break;
+                    case 1: if (token.length() > 1) UserWarn("The symbol should be an unique character", line); symbol = token[0]; break;
                     case 2: toState = token; break;
                     default: break;
                 }
-                token = strtok(nullptr, ", ");
             }
 
+            /*In our case, invalid symbols will be rejected in processing
             if (!inSigma(symbol)) {
                 UserWarn("Symbol does not occur in given alphabet", line);
-            }
+            }*/
 
             // Checks if our stateMap contains given fromState and toState
             if (this->stateMap.contains(fromState) && this->stateMap.contains(toState)) {
                 this->stateMap[fromState]->transitions[symbol] = stateMap[toState];
-
             } else {
                 UserWarn("There are undefined states", line);
             }
         }
     }
 
-public:
-    ~FiniteAutomaton() {
+    void setStartState() {
         for (const auto & state : states) {
-            delete state;
+            if (state->initial) {
+                startState = state;
+                break;
+            }
         }
     }
+
+public:
+    ~FiniteAutomaton() = default;
 };
 
 class DFA : public FiniteAutomaton {
@@ -195,33 +204,31 @@ public:
         setSigma(setup.getSigma());
         setStates(setup.getStates());
         setTransitions(setup.getTransitions());
+        setStartState();
         if (this->states.empty()) {
             UserWarn("There are no states declared for this DFA");
         }
     }
 
     bool process(const std::string& word) const{
-        const State* currentState = nullptr;
-        for (const auto & state : states) {
-            if (state->initial) {
-                currentState = state;
-                break;
-            }
-        }
+        auto currentState = startState;
+        assert(currentState != nullptr);
 
         if (word.empty()) {
-            return currentState != nullptr && currentState->final;
+            return currentState->final;
         }
 
-        for (auto symbol : word) {
-            if (currentState == nullptr || !currentState->transitions.contains(symbol)) {
+        for (const auto &symbol : word) {
+            if (!currentState->transitions.contains(symbol)) {
                 return false;
             }
             currentState = currentState->transitions.at(symbol);
         }
 
-        return currentState != nullptr && currentState->final;
+        return currentState->final;
     }
+
+    ~DFA() = default;
 };
 
 class NFA : public FiniteAutomaton {
@@ -231,32 +238,39 @@ public:
         setSigma(setup.getSigma());
         setStates(setup.getStates());
         setTransitions(setup.getTransitions());
+        setStartState();
         if (this->states.empty()) {
             UserWarn("There are no states declared for this NFA");
         }
     }
 
     bool process(const std::string& word) const{
-        const State* currentState = nullptr;
-        for (const auto & state : states) {
-            if (state->initial) {
-                currentState = state;
-                break;
-            }
-        }
+        std::vector<std::shared_ptr<State>> currentStates = {startState};
+        assert(currentStates[0] != nullptr);
 
         if (word.empty()) {
-            return currentState != nullptr && currentState->final;
+            return currentStates[0]->final;
         }
 
-        for (char symbol : word) {
-            if (currentState == nullptr || !currentState->transitions.contains(symbol)) {
-                return false;
+        for (const auto symbol : word) {
+            std::vector<std::shared_ptr<State>> newStates;
+            for (const auto& state : currentStates) {
+                if (state->transitions.contains(symbol)) {
+                    newStates.push_back(state->transitions.at(symbol));
+                }
             }
-            currentState = currentState->transitions.at(symbol);
+            currentStates = newStates;
         }
-        return currentState != nullptr && currentState->final;
+
+        for (const auto & state : currentStates) {
+            if (state->final) {
+                return true;
+            }
+        }
+        return false;
     }
+
+    ~NFA() = default;
 };
 
 template <typename FA>
@@ -282,14 +296,12 @@ private:
         this->configPath += "/";
     }
 
-    static void getResult(const FA& custom, const std::string& word) {
-        std::cout << "Word: " << word << ": ";
-        if (custom.process(word)) {
-            std::cout << "Accepted!" << std::endl;
-        }
-        else {
-            std::cout << "Rejected!" << std::endl;
-        }
+    std::string getConfigPath() {
+        return this->configPath;
+    }
+
+    static bool getResult(const FA& custom, const std::string& word) {
+        return custom.process(word);
     }
 
 public:
@@ -299,26 +311,27 @@ public:
     }
 
     void run(){
-        for (const auto& entry : std::filesystem::directory_iterator(this->configPath)) {
+        std::string currentPath = getConfigPath();
+        for (const auto& entry : std::filesystem::directory_iterator(currentPath)) {
             if (entry.is_regular_file()) {
-                std::string currentConfig = this->configPath + entry.path().filename().string();
-                std::cout << "\nConfiguration: " << currentConfig << '\n';
+                std::string currentConfig = currentPath + entry.path().filename().string();
+                std::cout << std::endl << "Configuration: " << currentConfig << std::endl;
                 FA custom(currentConfig);
                 for (const auto& word : words) {
-                    getResult(custom, word);
+                    std::cout << "Word: " << word << ": ";
+                    getResult(custom, word) ? std::cout << "Accepted!" << std::endl : std::cout << "Rejected!" << std::endl;
                 }
             }
         }
     }
 
-    ~Test(){std::cout<<"Test finished";};
+    ~Test() = default;
 };
 
 int main() {
-    _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
     Test<DFA> t1("words.in");
     t1.run();
-    // Test<NFA> t2("words.in");
-    // t2.run();
+    Test<NFA> t2("words.in");
+    t2.run();
     return 0;
 }
