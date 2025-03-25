@@ -1,4 +1,5 @@
-CMakeFiles/DFA_NFA.dir/src/NFA.cpp.obj: D:\FMI\DFA-NFA\src\NFA.cpp \
+CMakeFiles/DFA_NFA.dir/src/NFA.cpp.obj: \
+ C:\AAA.\ Hello\ world\FMI\DFA-NFA\src\NFA.cpp \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
@@ -24,7 +25,8 @@ CMakeFiles/DFA_NFA.dir/src/NFA.cpp.obj: D:\FMI\DFA-NFA\src\NFA.cpp \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/x86_64-w64-mingw32/include/errno.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
- D:/FMI/DFA-NFA/include/NFA.h D:/FMI/DFA-NFA/include/FiniteAutomaton.h \
+ C:/AAA~1.HEL/FMI/DFA-NFA/include/NFA.h \
+ C:/AAA~1.HEL/FMI/DFA-NFA/include/FiniteAutomaton.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list \
@@ -185,8 +187,9 @@ CMakeFiles/DFA_NFA.dir/src/NFA.cpp.obj: D:\FMI\DFA-NFA\src\NFA.cpp \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ranges_algobase.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_memory_defs.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h \
- D:/FMI/DFA-NFA/include/State.h D:/FMI/DFA-NFA/include/Setup.h \
- D:/FMI/DFA-NFA/include/UserWarn.h \
+ C:/AAA~1.HEL/FMI/DFA-NFA/include/State.h \
+ C:/AAA~1.HEL/FMI/DFA-NFA/include/Setup.h \
+ C:/AAA~1.HEL/FMI/DFA-NFA/include/UserWarn.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc

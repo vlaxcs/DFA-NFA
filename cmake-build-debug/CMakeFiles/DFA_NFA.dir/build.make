@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\FMI\DFA-NFA
+CMAKE_SOURCE_DIR = "C:\AAA. Hello world\FMI\DFA-NFA"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\FMI\DFA-NFA\cmake-build-debug
+CMAKE_BINARY_DIR = "C:\AAA. Hello world\FMI\DFA-NFA\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/DFA_NFA.dir/depend.make
@@ -70,93 +70,93 @@ include CMakeFiles/DFA_NFA.dir/flags.make
 
 CMakeFiles/DFA_NFA.dir/src/main.cpp.obj: CMakeFiles/DFA_NFA.dir/flags.make
 CMakeFiles/DFA_NFA.dir/src/main.cpp.obj: CMakeFiles/DFA_NFA.dir/includes_CXX.rsp
-CMakeFiles/DFA_NFA.dir/src/main.cpp.obj: D:/FMI/DFA-NFA/src/main.cpp
+CMakeFiles/DFA_NFA.dir/src/main.cpp.obj: C:/AAA.\ Hello\ world/FMI/DFA-NFA/src/main.cpp
 CMakeFiles/DFA_NFA.dir/src/main.cpp.obj: CMakeFiles/DFA_NFA.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\FMI\DFA-NFA\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DFA_NFA.dir/src/main.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DFA_NFA.dir/src/main.cpp.obj -MF CMakeFiles\DFA_NFA.dir\src\main.cpp.obj.d -o CMakeFiles\DFA_NFA.dir\src\main.cpp.obj -c D:\FMI\DFA-NFA\src\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\AAA. Hello world\FMI\DFA-NFA\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DFA_NFA.dir/src/main.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DFA_NFA.dir/src/main.cpp.obj -MF CMakeFiles\DFA_NFA.dir\src\main.cpp.obj.d -o CMakeFiles\DFA_NFA.dir\src\main.cpp.obj -c "C:\AAA. Hello world\FMI\DFA-NFA\src\main.cpp"
 
 CMakeFiles/DFA_NFA.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DFA_NFA.dir/src/main.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\FMI\DFA-NFA\src\main.cpp > CMakeFiles\DFA_NFA.dir\src\main.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\AAA. Hello world\FMI\DFA-NFA\src\main.cpp" > CMakeFiles\DFA_NFA.dir\src\main.cpp.i
 
 CMakeFiles/DFA_NFA.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DFA_NFA.dir/src/main.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\FMI\DFA-NFA\src\main.cpp -o CMakeFiles\DFA_NFA.dir\src\main.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\AAA. Hello world\FMI\DFA-NFA\src\main.cpp" -o CMakeFiles\DFA_NFA.dir\src\main.cpp.s
 
 CMakeFiles/DFA_NFA.dir/src/UserWarn.cpp.obj: CMakeFiles/DFA_NFA.dir/flags.make
 CMakeFiles/DFA_NFA.dir/src/UserWarn.cpp.obj: CMakeFiles/DFA_NFA.dir/includes_CXX.rsp
-CMakeFiles/DFA_NFA.dir/src/UserWarn.cpp.obj: D:/FMI/DFA-NFA/src/UserWarn.cpp
+CMakeFiles/DFA_NFA.dir/src/UserWarn.cpp.obj: C:/AAA.\ Hello\ world/FMI/DFA-NFA/src/UserWarn.cpp
 CMakeFiles/DFA_NFA.dir/src/UserWarn.cpp.obj: CMakeFiles/DFA_NFA.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\FMI\DFA-NFA\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DFA_NFA.dir/src/UserWarn.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DFA_NFA.dir/src/UserWarn.cpp.obj -MF CMakeFiles\DFA_NFA.dir\src\UserWarn.cpp.obj.d -o CMakeFiles\DFA_NFA.dir\src\UserWarn.cpp.obj -c D:\FMI\DFA-NFA\src\UserWarn.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\AAA. Hello world\FMI\DFA-NFA\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DFA_NFA.dir/src/UserWarn.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DFA_NFA.dir/src/UserWarn.cpp.obj -MF CMakeFiles\DFA_NFA.dir\src\UserWarn.cpp.obj.d -o CMakeFiles\DFA_NFA.dir\src\UserWarn.cpp.obj -c "C:\AAA. Hello world\FMI\DFA-NFA\src\UserWarn.cpp"
 
 CMakeFiles/DFA_NFA.dir/src/UserWarn.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DFA_NFA.dir/src/UserWarn.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\FMI\DFA-NFA\src\UserWarn.cpp > CMakeFiles\DFA_NFA.dir\src\UserWarn.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\AAA. Hello world\FMI\DFA-NFA\src\UserWarn.cpp" > CMakeFiles\DFA_NFA.dir\src\UserWarn.cpp.i
 
 CMakeFiles/DFA_NFA.dir/src/UserWarn.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DFA_NFA.dir/src/UserWarn.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\FMI\DFA-NFA\src\UserWarn.cpp -o CMakeFiles\DFA_NFA.dir\src\UserWarn.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\AAA. Hello world\FMI\DFA-NFA\src\UserWarn.cpp" -o CMakeFiles\DFA_NFA.dir\src\UserWarn.cpp.s
 
 CMakeFiles/DFA_NFA.dir/src/Setup.cpp.obj: CMakeFiles/DFA_NFA.dir/flags.make
 CMakeFiles/DFA_NFA.dir/src/Setup.cpp.obj: CMakeFiles/DFA_NFA.dir/includes_CXX.rsp
-CMakeFiles/DFA_NFA.dir/src/Setup.cpp.obj: D:/FMI/DFA-NFA/src/Setup.cpp
+CMakeFiles/DFA_NFA.dir/src/Setup.cpp.obj: C:/AAA.\ Hello\ world/FMI/DFA-NFA/src/Setup.cpp
 CMakeFiles/DFA_NFA.dir/src/Setup.cpp.obj: CMakeFiles/DFA_NFA.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\FMI\DFA-NFA\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DFA_NFA.dir/src/Setup.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DFA_NFA.dir/src/Setup.cpp.obj -MF CMakeFiles\DFA_NFA.dir\src\Setup.cpp.obj.d -o CMakeFiles\DFA_NFA.dir\src\Setup.cpp.obj -c D:\FMI\DFA-NFA\src\Setup.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\AAA. Hello world\FMI\DFA-NFA\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DFA_NFA.dir/src/Setup.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DFA_NFA.dir/src/Setup.cpp.obj -MF CMakeFiles\DFA_NFA.dir\src\Setup.cpp.obj.d -o CMakeFiles\DFA_NFA.dir\src\Setup.cpp.obj -c "C:\AAA. Hello world\FMI\DFA-NFA\src\Setup.cpp"
 
 CMakeFiles/DFA_NFA.dir/src/Setup.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DFA_NFA.dir/src/Setup.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\FMI\DFA-NFA\src\Setup.cpp > CMakeFiles\DFA_NFA.dir\src\Setup.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\AAA. Hello world\FMI\DFA-NFA\src\Setup.cpp" > CMakeFiles\DFA_NFA.dir\src\Setup.cpp.i
 
 CMakeFiles/DFA_NFA.dir/src/Setup.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DFA_NFA.dir/src/Setup.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\FMI\DFA-NFA\src\Setup.cpp -o CMakeFiles\DFA_NFA.dir\src\Setup.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\AAA. Hello world\FMI\DFA-NFA\src\Setup.cpp" -o CMakeFiles\DFA_NFA.dir\src\Setup.cpp.s
 
 CMakeFiles/DFA_NFA.dir/src/FiniteAutomaton.cpp.obj: CMakeFiles/DFA_NFA.dir/flags.make
 CMakeFiles/DFA_NFA.dir/src/FiniteAutomaton.cpp.obj: CMakeFiles/DFA_NFA.dir/includes_CXX.rsp
-CMakeFiles/DFA_NFA.dir/src/FiniteAutomaton.cpp.obj: D:/FMI/DFA-NFA/src/FiniteAutomaton.cpp
+CMakeFiles/DFA_NFA.dir/src/FiniteAutomaton.cpp.obj: C:/AAA.\ Hello\ world/FMI/DFA-NFA/src/FiniteAutomaton.cpp
 CMakeFiles/DFA_NFA.dir/src/FiniteAutomaton.cpp.obj: CMakeFiles/DFA_NFA.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\FMI\DFA-NFA\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DFA_NFA.dir/src/FiniteAutomaton.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DFA_NFA.dir/src/FiniteAutomaton.cpp.obj -MF CMakeFiles\DFA_NFA.dir\src\FiniteAutomaton.cpp.obj.d -o CMakeFiles\DFA_NFA.dir\src\FiniteAutomaton.cpp.obj -c D:\FMI\DFA-NFA\src\FiniteAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\AAA. Hello world\FMI\DFA-NFA\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DFA_NFA.dir/src/FiniteAutomaton.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DFA_NFA.dir/src/FiniteAutomaton.cpp.obj -MF CMakeFiles\DFA_NFA.dir\src\FiniteAutomaton.cpp.obj.d -o CMakeFiles\DFA_NFA.dir\src\FiniteAutomaton.cpp.obj -c "C:\AAA. Hello world\FMI\DFA-NFA\src\FiniteAutomaton.cpp"
 
 CMakeFiles/DFA_NFA.dir/src/FiniteAutomaton.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DFA_NFA.dir/src/FiniteAutomaton.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\FMI\DFA-NFA\src\FiniteAutomaton.cpp > CMakeFiles\DFA_NFA.dir\src\FiniteAutomaton.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\AAA. Hello world\FMI\DFA-NFA\src\FiniteAutomaton.cpp" > CMakeFiles\DFA_NFA.dir\src\FiniteAutomaton.cpp.i
 
 CMakeFiles/DFA_NFA.dir/src/FiniteAutomaton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DFA_NFA.dir/src/FiniteAutomaton.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\FMI\DFA-NFA\src\FiniteAutomaton.cpp -o CMakeFiles\DFA_NFA.dir\src\FiniteAutomaton.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\AAA. Hello world\FMI\DFA-NFA\src\FiniteAutomaton.cpp" -o CMakeFiles\DFA_NFA.dir\src\FiniteAutomaton.cpp.s
 
 CMakeFiles/DFA_NFA.dir/src/DFA.cpp.obj: CMakeFiles/DFA_NFA.dir/flags.make
 CMakeFiles/DFA_NFA.dir/src/DFA.cpp.obj: CMakeFiles/DFA_NFA.dir/includes_CXX.rsp
-CMakeFiles/DFA_NFA.dir/src/DFA.cpp.obj: D:/FMI/DFA-NFA/src/DFA.cpp
+CMakeFiles/DFA_NFA.dir/src/DFA.cpp.obj: C:/AAA.\ Hello\ world/FMI/DFA-NFA/src/DFA.cpp
 CMakeFiles/DFA_NFA.dir/src/DFA.cpp.obj: CMakeFiles/DFA_NFA.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\FMI\DFA-NFA\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DFA_NFA.dir/src/DFA.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DFA_NFA.dir/src/DFA.cpp.obj -MF CMakeFiles\DFA_NFA.dir\src\DFA.cpp.obj.d -o CMakeFiles\DFA_NFA.dir\src\DFA.cpp.obj -c D:\FMI\DFA-NFA\src\DFA.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\AAA. Hello world\FMI\DFA-NFA\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DFA_NFA.dir/src/DFA.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DFA_NFA.dir/src/DFA.cpp.obj -MF CMakeFiles\DFA_NFA.dir\src\DFA.cpp.obj.d -o CMakeFiles\DFA_NFA.dir\src\DFA.cpp.obj -c "C:\AAA. Hello world\FMI\DFA-NFA\src\DFA.cpp"
 
 CMakeFiles/DFA_NFA.dir/src/DFA.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DFA_NFA.dir/src/DFA.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\FMI\DFA-NFA\src\DFA.cpp > CMakeFiles\DFA_NFA.dir\src\DFA.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\AAA. Hello world\FMI\DFA-NFA\src\DFA.cpp" > CMakeFiles\DFA_NFA.dir\src\DFA.cpp.i
 
 CMakeFiles/DFA_NFA.dir/src/DFA.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DFA_NFA.dir/src/DFA.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\FMI\DFA-NFA\src\DFA.cpp -o CMakeFiles\DFA_NFA.dir\src\DFA.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\AAA. Hello world\FMI\DFA-NFA\src\DFA.cpp" -o CMakeFiles\DFA_NFA.dir\src\DFA.cpp.s
 
 CMakeFiles/DFA_NFA.dir/src/NFA.cpp.obj: CMakeFiles/DFA_NFA.dir/flags.make
 CMakeFiles/DFA_NFA.dir/src/NFA.cpp.obj: CMakeFiles/DFA_NFA.dir/includes_CXX.rsp
-CMakeFiles/DFA_NFA.dir/src/NFA.cpp.obj: D:/FMI/DFA-NFA/src/NFA.cpp
+CMakeFiles/DFA_NFA.dir/src/NFA.cpp.obj: C:/AAA.\ Hello\ world/FMI/DFA-NFA/src/NFA.cpp
 CMakeFiles/DFA_NFA.dir/src/NFA.cpp.obj: CMakeFiles/DFA_NFA.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\FMI\DFA-NFA\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DFA_NFA.dir/src/NFA.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DFA_NFA.dir/src/NFA.cpp.obj -MF CMakeFiles\DFA_NFA.dir\src\NFA.cpp.obj.d -o CMakeFiles\DFA_NFA.dir\src\NFA.cpp.obj -c D:\FMI\DFA-NFA\src\NFA.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\AAA. Hello world\FMI\DFA-NFA\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DFA_NFA.dir/src/NFA.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DFA_NFA.dir/src/NFA.cpp.obj -MF CMakeFiles\DFA_NFA.dir\src\NFA.cpp.obj.d -o CMakeFiles\DFA_NFA.dir\src\NFA.cpp.obj -c "C:\AAA. Hello world\FMI\DFA-NFA\src\NFA.cpp"
 
 CMakeFiles/DFA_NFA.dir/src/NFA.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DFA_NFA.dir/src/NFA.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\FMI\DFA-NFA\src\NFA.cpp > CMakeFiles\DFA_NFA.dir\src\NFA.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\AAA. Hello world\FMI\DFA-NFA\src\NFA.cpp" > CMakeFiles\DFA_NFA.dir\src\NFA.cpp.i
 
 CMakeFiles/DFA_NFA.dir/src/NFA.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DFA_NFA.dir/src/NFA.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\FMI\DFA-NFA\src\NFA.cpp -o CMakeFiles\DFA_NFA.dir\src\NFA.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\AAA. Hello world\FMI\DFA-NFA\src\NFA.cpp" -o CMakeFiles\DFA_NFA.dir\src\NFA.cpp.s
 
 # Object files for target DFA_NFA
 DFA_NFA_OBJECTS = \
@@ -180,7 +180,7 @@ DFA_NFA.exe: CMakeFiles/DFA_NFA.dir/build.make
 DFA_NFA.exe: CMakeFiles/DFA_NFA.dir/linkLibs.rsp
 DFA_NFA.exe: CMakeFiles/DFA_NFA.dir/objects1.rsp
 DFA_NFA.exe: CMakeFiles/DFA_NFA.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\FMI\DFA-NFA\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable DFA_NFA.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\AAA. Hello world\FMI\DFA-NFA\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable DFA_NFA.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\DFA_NFA.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -192,6 +192,6 @@ CMakeFiles/DFA_NFA.dir/clean:
 .PHONY : CMakeFiles/DFA_NFA.dir/clean
 
 CMakeFiles/DFA_NFA.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\FMI\DFA-NFA D:\FMI\DFA-NFA D:\FMI\DFA-NFA\cmake-build-debug D:\FMI\DFA-NFA\cmake-build-debug D:\FMI\DFA-NFA\cmake-build-debug\CMakeFiles\DFA_NFA.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\AAA. Hello world\FMI\DFA-NFA" "C:\AAA. Hello world\FMI\DFA-NFA" "C:\AAA. Hello world\FMI\DFA-NFA\cmake-build-debug" "C:\AAA. Hello world\FMI\DFA-NFA\cmake-build-debug" "C:\AAA. Hello world\FMI\DFA-NFA\cmake-build-debug\CMakeFiles\DFA_NFA.dir\DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/DFA_NFA.dir/depend
 

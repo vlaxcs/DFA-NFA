@@ -10,9 +10,6 @@ NFA::NFA(const std::string& file) {
     setStates(setup.getStates());
     setTransitions(setup.getTransitions());
     setStartState();
-    if (this->states.empty()) {
-        UserWarn("There are no states declared for this NFA");
-    }
 }
 
 bool NFA::process(const std::string& word) const{

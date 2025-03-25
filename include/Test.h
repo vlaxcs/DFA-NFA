@@ -55,7 +55,7 @@ public:
                 FA custom(currentConfig);
                 for (const auto& word : words) {
                     std::cout << "Word: " << word << " >> ";
-                    getResult(custom, word) ? std::cout << "Accepted!" << std::endl : std::cout << "Rejected!" << std::endl;
+                    getResult(custom, word) ? std::cout << "\033[32m" << "Accepted!" << "\033[0m" << std::endl : std::cout << "\033[31m" << "Rejected!"<< "\033[0m" << std::endl;
                 }
             }
         }

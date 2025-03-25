@@ -49,6 +49,10 @@ void FiniteAutomaton::setStates(const std::vector<std::string>& stateLines) {
          this->states.push_back(newState);
      }
 
+    if (this->states.empty()) {
+        UserWarn("There are no states declared for this DFA");
+    }
+
      if (!hasFinalState) {
          UserWarn("At least one final state required");
      }

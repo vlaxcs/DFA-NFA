@@ -1,5 +1,6 @@
-CMakeFiles/DFA_NFA.dir/src/main.cpp.obj: D:\FMI\DFA-NFA\src\main.cpp \
- D:/FMI/DFA-NFA/include/Test.h \
+CMakeFiles/DFA_NFA.dir/src/main.cpp.obj: \
+ C:\AAA.\ Hello\ world\FMI\DFA-NFA\src\main.cpp \
+ C:/AAA~1.HEL/FMI/DFA-NFA/include/Test.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -190,9 +191,10 @@ CMakeFiles/DFA_NFA.dir/src/main.cpp.obj: D:\FMI\DFA-NFA\src\main.cpp \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/align.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_dir.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_ops.h \
- D:/FMI/DFA-NFA/include/UserWarn.h \
+ C:/AAA~1.HEL/FMI/DFA-NFA/include/UserWarn.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
- D:/FMI/DFA-NFA/include/DFA.h D:/FMI/DFA-NFA/include/FiniteAutomaton.h \
+ C:/AAA~1.HEL/FMI/DFA-NFA/include/DFA.h \
+ C:/AAA~1.HEL/FMI/DFA-NFA/include/FiniteAutomaton.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable.h \
@@ -215,4 +217,5 @@ CMakeFiles/DFA_NFA.dir/src/main.cpp.obj: D:\FMI\DFA-NFA\src\main.cpp \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ranges_algobase.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_memory_defs.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h \
- D:/FMI/DFA-NFA/include/State.h D:/FMI/DFA-NFA/include/NFA.h
+ C:/AAA~1.HEL/FMI/DFA-NFA/include/State.h \
+ C:/AAA~1.HEL/FMI/DFA-NFA/include/NFA.h
